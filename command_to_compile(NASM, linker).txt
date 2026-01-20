@@ -1,0 +1,8 @@
+commnad to create .obj:
+    nasm -f win64 {name}.asm -o {name}.obj
+commnad to create .exe:
+    ld {name}.obj -o {name}.exe -lkernel32
+commnad to start programm:
+    .\{name}.exe
+full commnad(compile + start):
+    nasm -f win64 {name}.asm -o {name}.obj && ld {name}.obj -o {name}.exe -lkernel32 && .\{name}.exe
